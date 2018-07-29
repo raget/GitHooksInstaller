@@ -1,0 +1,7 @@
+#!/bin/sh 
+# first parameter is file with commit message
+GITMSGFILE=$1
+BRANCH=$(eval "git rev-parse --abbrev-ref HEAD")
+# remove everything before '/' (including) from branch name
+NAME=$(eval "echo $BRANCH | sed 's/.*\///'")
+eval "sed -i '1s/^/$NAME /' $GITMSGFILE"
