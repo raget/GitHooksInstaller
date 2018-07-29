@@ -1,5 +1,5 @@
 # GitHooksInstaller
-This project contains Git hooks and scripts for installing them into local Git repositories.
+This project contains client-side Git hooks and script for installing them into local Git repositories.
 
 ## Setup
 Run the `InstallGitHooks.ps1` in your project repository or in the folder where you aggregate your projects to install hook into any `.git` folder.
